@@ -12,7 +12,7 @@ const {
 } = process.env;
 
 try {
-  let client;  
+  let client;
   if (REDIS_URL) {
     client = redis.createClient({ url: REDIS_URL });
   }
